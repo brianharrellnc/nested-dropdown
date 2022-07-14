@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta ttp-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dropdown Menu</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/fc8f1c150f.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <div class="wrapper">
+            <div class="menu">
+                <div class="hamburger_menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="dd_wrap">
+                    <ul>
+                        <li><a href="#" class="a_parent">
+                            <div class="wrap">
+                                <span class="icon">
+                                    <i class="fa-solid fa-house"></i>
+                                </span>
+                                <span class="text">Home</span>
+                            </div>
+                        </a></li>
+                        <li><a href="#" class="a_parent">
+                            <div class="wrap">
+                                <span class="icon">
+                                    <i class="fa-solid fa-baseball"></i>
+                                </span>
+                                <span class="text">Sports</span>
+                            </div>
+                        </a>
+
+                            <div class="dd_menu">
+                                <ul>
+                                    <li><a href="#">
+                                        <div class="wrap">
+                                            <span class="icon">
+                                                <i class="fa-solid fa-person-running"></i>
+                                            </span>
+                                            <span class="text">Running</span>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="wrap">
+                                            <span class="icon">
+                                                <i class="fa-solid fa-person-biking"></i>
+                                            </span>
+                                            <span class="text">Biking</span>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#">
+                                        <div class="wrap">
+                                            <span class="icon">
+                                                <i class="fa-solid fa-football"></i>
+                                            </span>
+                                            <span class="text">Football</span>
+                                        </div>
+                                    </a></li>
+                                    <li><a href="#" >
+                                        <div class="wrap">
+                                            <span class="icon">
+                                                <i class="fa-solid fa-person-swimming"></i>
+                                            </span>
+                                            <span class="text">Swimming</span>
+                                        </div>
+                                    </a></li>
+                                </ul>
+                            </div>
+
+                    </li>
+                        <li><a href="#" class="a_parent">
+                            <div class="wrap">
+                                <span class="icon">
+                                    <i class="fa-solid fa-utensils"></i> 
+                                </span>
+                                <span class="text">Food</span>
+                            </div>
+                        </a>
+
+                        <div class="dd_menu">
+                            <ul>
+                                <li><a href="#">
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-burger"></i>
+                                        </span>
+                                        <span class="text">Hamburger</span>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-fish"></i>
+                                        </span>
+                                        <span class="text">Fish</span>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-egg"></i>
+                                        </span>
+                                        <span class="text">Eggs</span>
+                                    </div>
+                                </a></li>
+                                <li><a href="#" >
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-carrot"></i>
+                                        </span>
+                                        <span class="text">Veggies</span>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <li><a href="#" class="a_parent">
+                            <div class="wrap">
+                                <span class="icon">
+                                    <i class="fa-solid fa-paper-plane"></i>
+                                </span>
+                                <span class="text">Items</span>
+                            </div>
+                        </a>
+
+                        <div class="dd_menu">
+                            <ul>
+                                <li><a href="#">
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-pencil"></i>
+                                        </span>
+                                        <span class="text">Pencil</span>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-computer"></i>
+                                        </span>
+                                        <span class="text">Computer</span>
+                                    </div>
+                                </a></li>
+                                <li><a href="#">
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-gamepad"></i>
+                                        </span>
+                                        <span class="text">Controller</span>
+                                    </div>
+                                </a></li>
+                                <li><a href="#" >
+                                    <div class="wrap">
+                                        <span class="icon">
+                                            <i class="fa-solid fa-book"></i>
+                                        </span>
+                                        <span class="text">Book</span>
+                                    </div>
+                                </a></li>
+                            </ul>
+                        </div>
+
+                        <li><a href="#" class="a_parent">
+                            <div class="wrap">
+                                <span class="icon">
+                                    <i class="fa-solid fa-gear"></i>
+                                </span>
+                                <span class="text">Settings</span>
+                            </div>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var hamburger_menu = document.querySelector(".hamburger_menu");
+            var dd_wrap = document.querySelector(".dd_wrap");
+            var a_parent = document.querySelectorAll(".a_parent");
+
+            hamburger_menu.addEventListener("click", function(){
+                dd_wrap.classList.toggle("active");
+                a_parent.forEach(function(aitem){
+                        aitem.classList.remove("active")
+                    })
+            })
+
+            a_parent.forEach(function(aitem){
+                
+                aitem.addEventListener("click", function(){
+                    
+                    a_parent.forEach(function(aitem){
+                        aitem.classList.remove("active")
+                    })
+                    
+                    aitem.classList.add("active");
+                })
+            })
+        </script>
+
+    </body>
+</html>
